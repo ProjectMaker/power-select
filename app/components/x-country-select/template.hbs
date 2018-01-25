@@ -1,0 +1,10 @@
+<h3>Countries list</h3>
+{{#power-select
+options=names
+selected=selectedPersonName
+onchange=(action (mut selectedPersonName))
+as |name select|
+}}
+  {{log hasBlock}}
+  {{x-selection-option select=select option=name}}
+{{/power-select}}
